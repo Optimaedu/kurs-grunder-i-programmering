@@ -1,0 +1,17 @@
+{
+  "editor.showDeprecated": false,
+  "workbench.editorAssociations": {   
+    "*.md": "vscode.markdown.preview.editor",
+  },
+  "files.exclude": {
+    "node_modules": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "tsconfig.json": true,
+    ".mocharc.json": true,
+    ".vscode": true,
+    "src": true,
+    ".gitignore": true,
+    ".npmrc": true
+  }
+}

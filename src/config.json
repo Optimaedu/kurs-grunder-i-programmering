@@ -1,0 +1,6 @@
+{
+  "exercisesPath": "./src/exercises",
+  "testsPath": "./src/tests",
+  "studentWorkingDirectoryPath": "./",
+  "exerciseFileNameRegex": "^\\d+\\.js$"
+}
