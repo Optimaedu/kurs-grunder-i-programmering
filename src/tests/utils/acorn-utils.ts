@@ -109,7 +109,7 @@ export function nodeToLiteralNumber(node: Node|null|undefined): number {
   if(node.type !== 'Literal')
     return NaN;
   const n = node as Literal;
-  if(!n.value || typeof n.value !== 'number')
+  if(n.value == undefined || typeof n.value !== 'number')
     return NaN
   return n.value;
 }

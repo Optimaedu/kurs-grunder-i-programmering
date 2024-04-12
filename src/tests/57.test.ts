@@ -2,7 +2,6 @@ import { describe, test } from "mocha";
 import { getStudentfileInfo } from "../utils/student-file-info";
 import getFunctionDeclarations from "./utils/get-function-declarations";
 import testOutput from "./utils/test-output";
-import { generateRandomNumber } from "../utils/random";
 import { runCode } from "../utils/run-code";
 
 describe('57', function() {
@@ -30,14 +29,17 @@ describe('57', function() {
   });
 
   test('Returnera `true` om värdet i parametern är positivt', () => {
-    const regex = /if\s*\(.*\)/g;
+    const regex = /console\.log\(['"`].*['"`]\)/g;
+
     const values = Array.from({length:20}).map(() => Math.sign(Math.random() - 0.5)*10);
     values[0] = 0;
-    const code = data.code.replace(regex, 'if(false) if(false)') + `
+    const code = data.code.replace(regex, '{}') + `
       ${values.map(v => `console.log(isPositive(${v}))`).join('\n')}
     `;
+    
     const expected = values.map(v => v >= 0).join('\n');
     const result = runCode(code, '');
+
     if(result.error)
       throw new Error(result.error.short)
     if(result.outputWithoutReadline !== expected)

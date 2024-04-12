@@ -23,7 +23,7 @@ describe('36', function() {
   testOutput({
     title: 'Skriver ut rätt output för \'katt\'',
     code: data.code,
-    expected: 'Katter är bedårande varelser! ',
+    expected: 'Katter är bedårande varelser!',
     inputs: [
       {value: input2.toString()}
     ],

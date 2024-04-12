@@ -1,9 +1,9 @@
 /*
   ═══╡ UPPGIFT 19 ╞══════════════════════════════════════════════════
   
-  1. Definiera en variabel med namnet `firstName` och tilldena den
+  1. Definiera en variabel med namnet `firstName` och tilldela den
      textsträngen `'Alan'`.
-  2. Definiera en variabel med namnet `lastName` och tilldena den
+  2. Definiera en variabel med namnet `lastName` och tilldela den
      textsträngen `'Turing'`.
   3. Definiera en variabel med namnet `fullName` och tilldela den
      variabeln `firstName` konkatenerat med ett mellanslag och
