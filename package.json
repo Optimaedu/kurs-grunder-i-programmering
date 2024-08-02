@@ -11,7 +11,8 @@
   "type": "module",
   "scripts": {
     "start": "ts-node src/commands/start.ts",
-    "test": "ts-node src/commands/test.ts"
+    "test": "ts-node src/commands/test.ts",
+    "reset": "ts-node src/commands/reset.ts"
   },
   "dependencies": {
     "@types/chai": "^4.3.13",
