@@ -10,7 +10,7 @@
     "tsconfig.json": true,
     ".mocharc.json": true,
     ".vscode": true,
-    "src": fals,
+    "src": true,
     ".gitignore": true,
     ".npmrc": true
   }
