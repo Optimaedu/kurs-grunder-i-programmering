@@ -3,16 +3,15 @@ import chalk from 'chalk';
 import fs from 'fs';
 import Mocha from 'mocha';
 import config from '../config.json';
-
-// Run the command
-
 import { getCurrentStudentExerciseFilePath } from "../utils/file-utlis";
 import printCourseHeader from '../utils/print-course-header';
 import { setStudentFileInfo } from '../utils/student-file-info';
 import { Program, parse } from 'acorn';
 import { runCode } from '../utils/run-code';
 import TestReporter from '../tests/reporters/test-reporter';
-import openFileInVsCode from '../utils/open-file-in-vs-code';
+
+
+// Run the command
 
 (async () => {
   
@@ -116,8 +115,6 @@ import openFileInVsCode from '../utils/open-file-in-vs-code';
 
   const nextStudentExerciseFilePath = path.resolve(config.studentWorkingDirectoryPath + '/' + nextExerciseBaseName);
   fs.copyFileSync(nextExerciseFilePath, nextStudentExerciseFilePath);
-
-  await openFileInVsCode(nextStudentExerciseFilePath);
   
   process.stdout.write(chalk.cyan('Du kan nu börja på med uppgift ') + chalk.yellow(nextExerciseFileName)+'\n\n');
 

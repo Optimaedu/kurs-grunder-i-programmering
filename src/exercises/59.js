@@ -1,4 +1,3 @@
-
 /*
   ═══╡ UPPGIFT 59 ╞══════════════════════════════════════════════════
   
@@ -17,7 +16,7 @@
 
 // Ta inte bort följande kod:
 
-console.log(celsiusToFahrenheit(20)) // <- Skall skriva ut 68
+console.log(celsiusToFahrenheit(20))  // <- Skall skriva ut 68
 console.log(celsiusToFahrenheit(-15)) // <- Skall skriva ut 5
 
 // Deklarera funktionen `celsiusToFahrenheit` här..

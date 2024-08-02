@@ -1,9 +1,6 @@
 import { describe, test } from "mocha";
 import { getStudentfileInfo } from "../utils/student-file-info";
-import getVariableDeclarations from "./utils/get-variable-declarations";
-import getVariableAssignments from "./utils/get-variable-assignments";
-import { ArrayExpression } from "acorn";
-import { nodeToIdentifierName, nodeToLiteralNumber, nodeToLiteralString } from "./utils/acorn-utils";
+import { nodeToIdentifierName, nodeToLiteralNumber } from "./utils/acorn-utils";
 import testOutput from "./utils/test-output";
 import getFunctionCalls from "./utils/get-function-calls";
 
