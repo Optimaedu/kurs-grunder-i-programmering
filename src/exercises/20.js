@@ -13,10 +13,6 @@
 
     > Hej världen!
     > Programmering är roligt!
-
-  ───┤ RESURSER ├────────────────────────────────────────────────────
-
-  - ...
 */
 
 // Skriv din kod här..

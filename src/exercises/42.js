@@ -12,7 +12,10 @@
   
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta information om hur du
+  kan använda loopar:
+
+  https://javascript.info/while-for
 */
 
 import readline from 'read-console-input'

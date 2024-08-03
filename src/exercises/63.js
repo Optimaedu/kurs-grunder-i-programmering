@@ -9,7 +9,10 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta information om hur
+  du använder arrays:
+
+  https://javascript.info/array
 */
 
 const colors = ['röd', 'orange', 'gul', 'grön', 'blå']

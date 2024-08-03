@@ -7,10 +7,6 @@
     
     > Hej Selma!
     > Du är 67 år gammal.
-
-  ───┤ RESURSER ├────────────────────────────────────────────────────
-
-  - ...
 */
 
 const name = Selma

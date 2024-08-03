@@ -12,10 +12,6 @@
      `console.log()` så att programmet skriver ut följande output:
     
     > Alan Turing
-
-  ───┤ RESURSER ├────────────────────────────────────────────────────
-
-  - ...
 */
 
 // Skriv din kod här..

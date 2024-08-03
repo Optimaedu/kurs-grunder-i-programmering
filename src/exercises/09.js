@@ -16,7 +16,8 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  I programmering kan du använda aritmetiska operationer, dvs. 
+  addition (+), subtraktion (-), multiplikation (*) och division (/).
 */
 
 // Skriv din kod här..

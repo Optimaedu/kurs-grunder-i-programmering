@@ -14,7 +14,10 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Fråga efter input av användaren och spara det till en variabel
+  enligt följande:
+
+  let message = readline()
 */
 
 // Följande `import`-kodrad måste finns för att vi skall kunna fråga

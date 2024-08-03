@@ -7,7 +7,10 @@
   
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta informaiton om hur du
+  skapar och använder funktioner:
+
+  https://javascript.info/function-basics
 */
 
 // Ta inte bort följande kod:

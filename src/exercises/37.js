@@ -15,10 +15,11 @@
   > Talet är 0.
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
+  
+  Besök följande webbsidor för att hitta information om hur du
+  kan använda villkor:
 
-  - ...
-
-  Lista med jämförelseoperatorer:
+  https://javascript.info/ifelse
   https://www.w3schools.com/js/js_comparisons.asp
 */
 

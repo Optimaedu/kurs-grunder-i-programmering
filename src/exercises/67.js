@@ -14,7 +14,10 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta information om hur
+  du använder arrays:
+
+  https://javascript.info/array
 */
 
 // Ändra inte på följande kodrad:

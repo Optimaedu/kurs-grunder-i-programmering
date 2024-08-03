@@ -9,7 +9,8 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Du kan sammanfoga två eller flera textsträngar (strings) genom att
+  använda ett plustecken (+) mellan dem.
 */
 
 // Skriv din kod här..

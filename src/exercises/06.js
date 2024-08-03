@@ -7,7 +7,7 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Tal ska inte omslutas av citattecken.
 */
 
 // Skriv din kod här..

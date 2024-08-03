@@ -9,7 +9,9 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta information om variabler.
+  
+  https://javascript.info/variables
 */
 
 // Skriv din kod här..

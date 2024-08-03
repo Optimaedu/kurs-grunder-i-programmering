@@ -7,7 +7,8 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Tal ska inte omslutas av citattecken. 
+  För decimaltal används punkt (.) som decimaltecken.
 */
 
 // Skriv din kod här..

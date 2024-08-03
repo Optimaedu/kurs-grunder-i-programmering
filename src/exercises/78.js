@@ -15,7 +15,10 @@
 
   ───┤ RESURSER ├────────────────────────────────────────────────────
 
-  - ...
+  Besök följande webbsida för att hitta information om hur du
+  skapar och använder objekt:
+
+  https://javascript.info/object
 */
 
 // Ändra inte på följande kod.
