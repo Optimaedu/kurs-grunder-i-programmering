@@ -107,7 +107,7 @@ import TestReporter from '../tests/reporters/test-reporter';
   // 10. Check if course is completed !!!
 
   if(!fs.existsSync(nextExerciseFilePath)) {
-    process.stdout.write('INGA FLER UPPGIFTER...\n\n');
+    process.stdout.write(chalk.yellow('\n!!! Du har nu klarat av alla uppgifter !!!\n\n'));
     return;
   }
 

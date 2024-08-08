@@ -40,7 +40,7 @@ const recipes = [
     ingredients: ["Mjöl", "Mjölk", "Ägg", "Smör"]
   },
   {
-    namn: "Caprese",
+    name: "Caprese",
     cuisine: "Italienskt",
     ingredients: ["Tomater", "Mozzarella", "Basilika"]
   },
