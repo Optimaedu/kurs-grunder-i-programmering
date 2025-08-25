@@ -4,6 +4,7 @@ import getFunctionDeclarations from "./utils/get-function-declarations";
 import getFunctionCalls from "./utils/get-function-calls";
 import testOutput from "./utils/test-output";
 import testFunctionCallExpressionCount from "./utils/test-function-call-expression-count";
+import { FunctionDeclaration } from "acorn";
 
 describe('52', function() {
   const data = getStudentfileInfo();
@@ -18,7 +19,7 @@ describe('52', function() {
     
     const target = declarations.get('hello');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `hello`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 

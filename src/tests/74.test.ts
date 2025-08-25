@@ -54,7 +54,7 @@ function getObjectFromVariableAssignment(node: Node|Node[]) {
   if(all.size > 1)
     throw new Error('Du skall deklarera endast en variabel.');
 
-  const name = all.keys().next().value;
+  const name = all.keys().next().value as string;;
   const assignments = all.get(name);
 
   if(!assignments || assignments.length !== 1)

@@ -4,6 +4,7 @@ import getFunctionDeclarations from "./utils/get-function-declarations";
 import { nodeToIdentifierName, nodeToLiteralString } from "./utils/acorn-utils";
 import getFunctionCalls from "./utils/get-function-calls";
 import testOutput from "./utils/test-output";
+import { FunctionDeclaration } from "acorn";
 
 describe('54', function() {
   const data = getStudentfileInfo();
@@ -18,7 +19,7 @@ describe('54', function() {
     
     const target = declarations.get('greet');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value  as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `greet`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 
@@ -36,7 +37,7 @@ describe('54', function() {
     
     const target = declarations.get('greet');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value  as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `greet`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 

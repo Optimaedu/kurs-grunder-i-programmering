@@ -5,6 +5,7 @@ import { nodeToIdentifierName, nodeToLiteralString } from "./utils/acorn-utils";
 import getFunctionCalls from "./utils/get-function-calls";
 import testOutput from "./utils/test-output";
 import getReturnStatements from "./utils/get-return-statements";
+import { FunctionDeclaration } from "acorn";
 
 describe('55', function() {
   const data = getStudentfileInfo();
@@ -19,7 +20,7 @@ describe('55', function() {
     
     const target = declarations.get('message');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value  as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `message`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 

@@ -22,7 +22,7 @@ describe('62', function() {
       throw new Error('Du måste tilldela ett värde till din variabel.');
     if(assignments.size > 1)
       throw new Error('Du skall endast tilldela ett värde till din variabel.');
-    const first = assignments.keys().next().value;
+    const first = assignments.keys().next().value as string;;
     const assignment = assignments.get(first)!;
     if(assignment[0].right.type !== 'ArrayExpression')
       throw new Error('Du måste tilldela variabeln en array.');
@@ -34,7 +34,7 @@ describe('62', function() {
       throw new Error('Du måste tilldela ett värde till din variabel.');
     if(assignments.size > 1)
       throw new Error('Du skall endast tilldela ett värde till din variabel.');
-    const first = assignments.keys().next().value;
+    const first = assignments.keys().next().value as string;;
     const assignment = assignments.get(first)!;
     if(assignment[0].right.type !== 'ArrayExpression')
       throw new Error('Du måste tilldela variabeln en array.');

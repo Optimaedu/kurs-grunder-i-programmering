@@ -2,7 +2,7 @@ import { Node, VariableDeclaration, VariableDeclarator } from "acorn";
 import astTraverse from "./acorn-utils";
 
 export type VariableDeclaratorWithKind = VariableDeclarator & {
-  kind: 'var'|'let'|'const'
+  kind: VariableDeclaration["kind"];
 };
 
 export default function getVariableDeclarations(ast: Node|Node[]) {

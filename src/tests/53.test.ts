@@ -1,6 +1,7 @@
 import { describe, test } from "mocha";
 import { getStudentfileInfo } from "../utils/student-file-info";
 import getFunctionDeclarations from "./utils/get-function-declarations";
+import { FunctionDeclaration } from "acorn";
 
 describe('53', function() {
   const data = getStudentfileInfo();
@@ -15,7 +16,7 @@ describe('53', function() {
     
     const target = declarations.get('calculate');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `calculate`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 
@@ -33,7 +34,7 @@ describe('53', function() {
     
     const target = declarations.get('calculate');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value  as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `calculate`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 

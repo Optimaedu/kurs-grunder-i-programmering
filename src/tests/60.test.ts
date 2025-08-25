@@ -4,6 +4,7 @@ import getFunctionDeclarations from "./utils/get-function-declarations";
 import testOutput from "./utils/test-output";
 import { runCode } from "../utils/run-code";
 import { generateRandomNumber } from "../utils/random";
+import { FunctionDeclaration } from "acorn";
 
 describe('60', function() {
   const data = getStudentfileInfo();
@@ -18,7 +19,7 @@ describe('60', function() {
     
     const target = declarations.get('average');
     if(!target || target.length < 1) {
-      const [key] = declarations.entries().next().value;
+      const [key] = declarations.entries().next().value  as [string, FunctionDeclaration[]];
       throw new Error('Du måste deklarera en funktion med namnet `average`.\nDu har deklarerat en funktion med namnet `'+key+'`.');
     }
 
